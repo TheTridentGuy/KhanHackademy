@@ -38,4 +38,4 @@ setInterval(() => {
         clearInterval(edit_interval);
     }catch{
     }
-}, 500)
+}, 500);
