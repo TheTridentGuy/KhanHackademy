@@ -45,7 +45,7 @@
     <script>
         fetch("https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/bookmarklet.js").then((response) => {
             console.log(response.text().then((text) => {
-                document.querySelector("#bookmark").href = `javascript: ${text}`;
+                document.querySelector("#bookmark").href = `javascript: ${text.replace("\n", " ")}`;
             }));
         }); 
     </script>
