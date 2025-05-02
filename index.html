@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khan Hackademy Bookmarker</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-col{
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-grow{
+            flex-grow: 1;
+        }
+        #bookmark{
+            font-size: 4vmin;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-grow"></div>
+    <div class="flex-row">
+        <div class="flex-grow"></div>
+        <a href="/" id="bookmark">[DRAG THIS LINK INTO YOUR BOOKMARKS BAR]</a>
+        <div class="flex-grow"></div>
+    </div>
+    <div class="flex-grow"></div>
+    <script>
+        fetch("https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/bookmarklet.js").then((response) => {
+            console.log(response.text().then((text) => {
+                document.querySelector("#bookmark").href = `javascript: ${text}`;
+            }));
+        }); 
+    </script>
+</body>
+</html>
