@@ -1,0 +1,31 @@
+name: Generate Userscript
+
+on:
+  push:
+    paths:
+      - "/*"
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Set up Python Environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - name: Generate Userscript
+        run: |
+          python scripts/generate_userscript.py
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add khanhackademy.user.js
+          git commit -m "Auto-generate userscript"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
