@@ -6,7 +6,6 @@
 // @license         GPL v3 - http://www.gnu.org/licenses/gpl-3.0.txt
 // @copyright       Copyright (C) 2025 Aiden Bohlander
 // @include         https://khanacademy.org/*
-// @include         https://*.khanacademy.org/*
 // @updateURL       https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/khanhackademy.user.js
 // @version         1.0
 // @run-at			document-end
