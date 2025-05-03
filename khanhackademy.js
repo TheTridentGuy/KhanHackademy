@@ -26,10 +26,7 @@
     setInterval(() => {
         try{
             let header = $("[data-testid='header-logo']");
-            let new_header = header.cloneNode(true);
-            new_header.innerHTML = "<span style='font-size: x-large;'>Khan Hackademy</span>";
-            new_header.href = "https://github.com/TheTridentGuy/KhanHackademy/";
-            header.parentElement.replaceChild(new_header, header);
+            header.innerHTML = "<span style='font-size: x-large;'>Khan Hackademy</span>";
             let donation_link = $("[data-testid='header-donate-link']");
             let new_donation_link = donation_link.cloneNode(true);
             let donation_icon = new_donation_link.firstElementChild.outerHTML;
