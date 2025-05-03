@@ -19,12 +19,16 @@ jobs:
       - name: Generate Userscript
         run: |
           python scripts/generate_userscript.py
+      - name: Generate Bookmarklet
+        run: |
+          python scripts/generate_bookmarklet.py
       - name: Commit and Push Changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add khanhackademy.user.js
-          git commit -m "Auto-generate userscript"
+          git add bookmarklet.txt
+          git commit -m "Auto-generate userscript and bookmarklet"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
