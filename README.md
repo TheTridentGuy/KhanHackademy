@@ -6,7 +6,7 @@
 ### 1. Star this repo
 ### 2. Open https://thetridentguy.github.io/KhanHackademy/ in your browser
 ### 3. Drag the link on the page into your bookmarks bar:
-It's pretty big, you cant miss it.
+It's pretty big, you can't miss it.
 ### 4. Visit Khan Academy, and click on the bookmark. The title of the page should now say "Khan Hackademy"
 The "donate" link will also change to "buy me boba", which you should do.
 ### 5. Go to whatever exercise you want to do, and spam through it:
