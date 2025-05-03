@@ -2,10 +2,11 @@
 // @name          	Khan Hackademy
 // @description     Khan Hackademy is a script that gets a full score on every Khan Academy exercise you complete.
 // @author			TheTridentGuy (thetridentguy.com)
-// @namespace       thetridentguy
+// @namespace       https://thetridentguy.com
 // @license         GPL v3 - http://www.gnu.org/licenses/gpl-3.0.txt
-// @copyright       Copyright (C) 2025 Aiden Bohlander aka. TheTridentGuy
+// @copyright       Copyright (C) 2025 Aiden Bohlander
 // @include         https://khanacademy.org/*
+// @updateURL       https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/khanhackademy.user.js
 // @version         1.0
 // @run-at			document-end
 /**
