@@ -43,9 +43,9 @@
     </div>
     <div class="flex-grow"></div>
     <script>
-        fetch("https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/bookmarklet.js").then((response) => {
+        fetch("https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/bookmarklet.txt").then((response) => {
             console.log(response.text().then((text) => {
-                document.querySelector("#bookmark").href = `javascript: ${text.replace("\n", " ")}`;
+                document.querySelector("#bookmark").href = text.replace("\n", " ");
             }));
         }); 
     </script>
