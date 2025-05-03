@@ -2,10 +2,9 @@ name: Generate Userscript
 
 on:
   push:
-    paths:
-      - "/*"
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   generate:
