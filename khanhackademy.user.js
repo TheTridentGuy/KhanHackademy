@@ -9,6 +9,7 @@
 // @updateURL       https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/khanhackademy.user.js
 // @version         1.0
 // @run-at			document-end
+// ==/UserScript==
 /**
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
