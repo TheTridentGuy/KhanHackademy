@@ -57,8 +57,8 @@
             let donation_link = $("[data-testid='header-donate-link']");
             let new_donation_link = donation_link.cloneNode(true);
             let donation_icon = new_donation_link.firstElementChild.outerHTML;
-            new_donation_link.innerHTML = "Buy me boba " + donation_icon;
-            new_donation_link.href = "https://thetridentguy.com/contact";
+            new_donation_link.innerHTML = "Star the repo" + donation_icon;
+            new_donation_link.href = "https://github.com/TheTridentGuy/KhanHackademy/";
             donation_link.parentElement.replaceChild(new_donation_link, donation_link);
             clearInterval(edit_interval);
         }catch{
