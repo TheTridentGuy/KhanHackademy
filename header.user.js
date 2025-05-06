@@ -7,6 +7,7 @@
 // @copyright       Copyright (C) 2025 Aiden Bohlander
 // @include         https://khanacademy.org/*
 // @include         https://*.khanacademy.org/*
+// @downloadURL     https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/khanhackademy.user.js
 // @updateURL       https://raw.githubusercontent.com/TheTridentGuy/KhanHackademy/refs/heads/main/khanhackademy.user.js
 // @version         1.0
 // @run-at			document-end
